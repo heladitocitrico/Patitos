@@ -20,10 +20,29 @@ public class Player : MonoBehaviour
     {
         if (CampesinoSlide)
         {
+<<<<<<< Updated upstream
             CampesinoSlide.value = CampesinosPercent;
             ReySlide.value = ReyesPercent;
             ClerigoSlide.value = ClerigoPercent;
             BuffonesSlide.value = BuffonesPercent;
         }
     }
+=======
+            SliderCampesino.fillAmount = CampesinoPercent / 100;
+            SliderClerigo.fillAmount = ClerigoPercent / 100;
+            SliderNobles.fillAmount = NoblesPercent / 100;
+            SliderBufones.fillAmount = BufonPercent / 100;
+        }
+    }
+
+    public Image SliderCampesino;
+    public Image SliderClerigo;
+    public Image SliderNobles;
+    public Image SliderBufones;
+
+    public float CampesinoPercent;
+    public float ClerigoPercent;
+    public float NoblesPercent;
+    public float BufonPercent;
+>>>>>>> Stashed changes
 }
