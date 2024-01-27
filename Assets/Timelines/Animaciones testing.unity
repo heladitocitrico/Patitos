@@ -131,6 +131,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8686250634608588831, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999909
+      objectReference: {fileID: 0}
+    - target: {fileID: -8686250634608588831, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0042858217
+      objectReference: {fileID: 0}
+    - target: {fileID: -8686250634608588831, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.491
+      objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
       propertyPath: m_Name
       value: Peasant
