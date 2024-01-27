@@ -156,12 +156,24 @@ PrefabInstance:
       value: Peasant
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39896
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39896
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.39896
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 9.66
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.91
+      value: -4.77
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: e28dddca0b2604b4fa22c9f08ba22cb2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -222,7 +234,7 @@ Animator:
   m_GameObject: {fileID: 606816574}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0a7b87346ea68e14d9e61c35fa5a09d3, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
