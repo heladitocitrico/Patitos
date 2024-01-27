@@ -171,14 +171,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a3085ddbafc3f4c99a8a98dac9190b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CampesinoSlide: {fileID: 0}
-  ClerigoSlide: {fileID: 0}
-  ReySlide: {fileID: 0}
-  BuffonesSlide: {fileID: 0}
-  CampesinosPercent: 0.5
-  ClerigoPercent: 0.7
-  ReyesPercent: 1
-  BuffonesPercent: 0.2
+  GameOverAnim: {fileID: 0}
+  CampesinoSlider: {fileID: 0}
+  ClerigoSlider: {fileID: 0}
+  NoblesSlider: {fileID: 0}
+  BufonesSlider: {fileID: 0}
+  CampesinoPercent: 0
+  ClerigoPercent: 0
+  NoblesPercent: 0
+  BufonPercent: 0
 --- !u!1 &48928837
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +211,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chistesData: {fileID: 11400000, guid: a29c9599078454534828a05da2baadfc, type: 2}
   chisteText: {fileID: 591817452}
+  PuebloID: 0
+  PJ: {fileID: 1144083366}
+  CampesinoSprite: {fileID: 21300000, guid: dab8846e9e6236c42a0c8c5fa962dc7f, type: 3}
+  CleroSprite: {fileID: 0}
+  NobleSprite: {fileID: 0}
+  BufonSprint: {fileID: 0}
 --- !u!4 &48928839
 Transform:
   m_ObjectHideFlags: 0
@@ -1046,14 +1053,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a3085ddbafc3f4c99a8a98dac9190b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CampesinoSlide: {fileID: 0}
-  ClerigoSlide: {fileID: 0}
-  ReySlide: {fileID: 0}
-  BuffonesSlide: {fileID: 0}
-  CampesinosPercent: 0.7
-  ClerigoPercent: 0.7
-  ReyesPercent: 0.7
-  BuffonesPercent: 0.7
+  GameOverAnim: {fileID: 0}
+  CampesinoSlider: {fileID: 0}
+  ClerigoSlider: {fileID: 0}
+  NoblesSlider: {fileID: 0}
+  BufonesSlider: {fileID: 0}
+  CampesinoPercent: 0
+  ClerigoPercent: 0
+  NoblesPercent: 0
+  BufonPercent: 0
 --- !u!224 &1504621180 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5809748609012309604, guid: 236bf22177fceed4599c4fde7264fc23, type: 3}
