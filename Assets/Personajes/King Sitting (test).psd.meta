@@ -120,7 +120,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 2, y: 1664}
     spritePosition: {x: 279, y: 6}
-  - name: Mouth Rested
+  - name: Mouth Talking
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -129,6 +129,48 @@ ScriptedImporter:
       serializedVersion: 2
       x: 514
       y: 1665
+      width: 48
+      height: 49
+    spriteID: 2707ab405e999754d894ae8020537f83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 513, y: 1664}
+    spritePosition: {x: 671, y: 521}
+  - name: Mouth Laughing
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 514
+      y: 1749
+      width: 48
+      height: 49
+    spriteID: a9fcb5c5d751e8c4c84943aa75e5d074
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 513, y: 1747}
+    spritePosition: {x: 671, y: 509}
+  - name: Mouth Rested
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 514
+      y: 1722
       width: 48
       height: 11
     spriteID: 45ee65b6625fc5b4dbc92557dcfab6b0
@@ -139,9 +181,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 513, y: 1663}
+    uvTransform: {x: 513, y: 1720}
     spritePosition: {x: 671, y: 547}
-  - name: Eyes Neutral
+  - name: Eyes Mad
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -150,6 +192,48 @@ ScriptedImporter:
       serializedVersion: 2
       x: 423
       y: 1584
+      width: 164
+      height: 50
+    spriteID: 47ba01a0a42f4e94aa94752a0b896306
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 423, y: 1584}
+    spritePosition: {x: 613, y: 617}
+  - name: Eyes Laughing
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 1990
+      width: 149
+      height: 29
+    spriteID: ddd020b50e063444e83b3a669eb914c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 1990}
+    spritePosition: {x: 621, y: 618}
+  - name: Eyes Neutral
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1990
       width: 151
       height: 31
     spriteID: bd3ac3a64fc7b3d47b5837a157193b33
@@ -160,7 +244,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 423, y: 1584}
+    uvTransform: {x: 4, y: 1990}
     spritePosition: {x: 620, y: 617}
   - name: Rectangle 1
     originalName: 
@@ -458,32 +542,32 @@ ScriptedImporter:
     isImported: 0
     isVisible: 1
   - name: Mouth Talking
-    spriteName: 
+    spriteName: Mouth Talking
     isGroup: 0
     parentIndex: 2
     spriteID: 2707ab405e999754d894ae8020537f83
     layerID: 44
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 514, y: 1665}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Mouth Laughing
-    spriteName: 
+    spriteName: Mouth Laughing
     isGroup: 0
     parentIndex: 2
     spriteID: a9fcb5c5d751e8c4c84943aa75e5d074
     layerID: 78
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 514, y: 1749}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Mouth Rested
     spriteName: Mouth Rested
     isGroup: 0
     parentIndex: 2
     spriteID: 45ee65b6625fc5b4dbc92557dcfab6b0
     layerID: 43
-    mosaicPosition: {x: 514, y: 1665}
+    mosaicPosition: {x: 514, y: 1722}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -498,32 +582,32 @@ ScriptedImporter:
     isImported: 0
     isVisible: 1
   - name: Eyes Mad
-    spriteName: 
+    spriteName: Eyes Mad
     isGroup: 0
     parentIndex: 6
     spriteID: 47ba01a0a42f4e94aa94752a0b896306
     layerID: 45
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 423, y: 1584}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Eyes Laughing
-    spriteName: 
+    spriteName: Eyes Laughing
     isGroup: 0
     parentIndex: 6
     spriteID: ddd020b50e063444e83b3a669eb914c4
     layerID: 81
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 163, y: 1990}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Eyes Neutral
     spriteName: Eyes Neutral
     isGroup: 0
     parentIndex: 6
     spriteID: bd3ac3a64fc7b3d47b5837a157193b33
     layerID: 42
-    mosaicPosition: {x: 423, y: 1584}
+    mosaicPosition: {x: 4, y: 1990}
     flatten: 0
     isImported: 1
     isVisible: 1

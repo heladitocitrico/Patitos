@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverAnim: {fileID: 0}
+  PeaseantAnimator: {fileID: 0}
   CampesinoSlider: {fileID: 0}
   ClerigoSlider: {fileID: 0}
   NoblesSlider: {fileID: 0}
@@ -180,6 +181,7 @@ MonoBehaviour:
   ClerigoPercent: 0
   NoblesPercent: 0
   BufonPercent: 0
+  PJ: {fileID: 0}
 --- !u!1 &48928837
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +220,7 @@ MonoBehaviour:
   laughButton: {fileID: 1504621185}
   neutralButton: {fileID: 1552724118}
   killButton: {fileID: 1637082158}
+  PJ: {fileID: 0}
 --- !u!4 &48928839
 Transform:
   m_ObjectHideFlags: 0
@@ -1092,6 +1095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverAnim: {fileID: 0}
+  PeaseantAnimator: {fileID: 0}
   CampesinoSlider: {fileID: 0}
   ClerigoSlider: {fileID: 0}
   NoblesSlider: {fileID: 0}
@@ -1100,6 +1104,7 @@ MonoBehaviour:
   ClerigoPercent: 0
   NoblesPercent: 0
   BufonPercent: 0
+  PJ: {fileID: 0}
 --- !u!224 &1504621180 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5809748609012309604, guid: 236bf22177fceed4599c4fde7264fc23, type: 3}

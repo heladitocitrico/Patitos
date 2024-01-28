@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 740bdc9ae8a484fad8e80923deed6d3c, type: 3}
+  m_Name: IntroductionsData
+  m_EditorClassIdentifier: 
+  Introductions:
+  - texto:  "Oh majestad, humildemente me presento ante vos. La tierra que labramos con sudor sufre ante plagas y malas cosechas. Rogamos por vuestra gracia y sabiduría para aliviar el peso que la naturaleza impone a nuestro campo."
+    pueblo: 0
+  - texto:  "Gran rey, me inclino ante tu presencia con la inquietud que pesa sobre el alma de los fieles. La fe flaquea ante desafíos oscuros y necesitamos tu guía para iluminar el camino y fortalecer la espiritualidad en nuestros corazones."
+    pueblo: 1
+  - texto:  "Mi soberano, de rodillas comparezco ante tu trono. Las intrigas y rivalidades en la corte amenazan con desestabilizar la paz que tanto valoramos. Ruego por tu sabiduría para mantener la armonía y el orden en la nobleza."
+    pueblo: 2
+  - texto:  "Oh rey risueño, ante tu majestuosa hilaridad nos arrodillamos. Los chistes que tejemos enfrentan el desafío de hacer reír a todos, incluso a la realeza. Necesitamos tu apoyo para que la comedia florezca y las risas resuenen en todo el reino."
+    pueblo: 3
+  - texto:  "Oh noble rey, en la humildad de mi existencia campesina me postré ante ti. La tierra que cultivo clama por justicia, impuestos opresivos ahogan nuestras cosechas. Con la esperanza de tu benevolencia, busco alivio para mi familia y mis compañeros agricultores."
+    pueblo: 0
+  - texto:  "¡Oh majestuosidad celestial! Como siervo de la divinidad, me postro con pesar. La fe yace amenazada por la ignorancia, la oscuridad se cierne sobre los corazones creyentes. Imploro tu compasión y sabiduría para guiar a tu rebaño por los senderos luminosos de la rectitud."
+    pueblo: 1
+  - texto:  "Oh magnánimo rey, en reverencia me arrodillo ante tu trono. La intriga y las disputas en la nobleza amenazan con desgarrar el tejido de nuestro linaje. Te suplico, con la gracia de tu autoridad real, endereces los hilos de la cohesión aristocrática y restablezcas la armonía en nuestra esfera."
+    pueblo: 2
+  - texto:  "¡Gran monarca del humor! Nos inclinamos ante tu espléndida risa. Las travesuras bufonas enfrentan desafíos, ¡necesitamos tu respaldo para que la risa resuene en todos los rincones! Con tu gracia, haremos del reino un escenario de alegría y ocurrencias cómicas."
+    pueblo: 3
+  - texto:  "Noble rey, me postro ante ti con la carga de los campos que labro. Las plagas amenazan nuestras cosechas, y los impuestos nos ahogan. Imploro tu compasión para aliviar el peso que la naturaleza y las demandas tributarias imponen sobre nosotros."
+    pueblo: 0
+  - texto:  "Oh monarca piadoso, humildemente me arrodillo, portador de las inquietudes espirituales. La fe se ve amenazada por sombras siniestras, y busco tu guía para iluminar nuestros corazones y restaurar la fortaleza espiritual en este reino."
+    pueblo: 1
+  - texto:  "Majestuoso rey, me inclino ante tu trono con la inquietud de la nobleza. Intrigas y rivalidades desestabilizan la paz en la corte. Ruego por tu sabiduría para mantener la armonía y preservar la integridad de la nobleza en este reino."
+    pueblo: 2
+  - texto:  "Oh rey del humor, ante tu esencia risueña nos humillamos. Los chistes que tejemos afrontan desafíos, y buscamos tu respaldo para que la comedia florezca. Con tu benevolencia, haremos del reino un escenario lleno de risas y alegría."
+    pueblo: 3
+  - texto:  "Oh noble señor, bajo el peso de la tierra que cultivo, me postro con la inquietud de plagas y tributos que ahogan nuestras cosechas. Imploro tu gracia para aliviar el yugo de la naturaleza y las demandas tributarias que nos agobian."
+    pueblo: 0
+  - texto:  "Monarca piadoso, en humildad me inclino ante tu majestuosidad. La oscuridad amenaza la fe, y busco en tu sabiduría la luz que guíe nuestros corazones, restaurando así la fortaleza espiritual que este reino ansía."
+    pueblo: 1
+  - texto:  "Majestuoso rey, en reverencia me presento con la inquietud que pesa sobre la nobleza. Intrigas y discordias desafían la paz en la corte. Ruego por tu prudencia para mantener la armonía y salvaguardar la integridad de la nobleza en este reino."
+    pueblo: 2
+  - texto:  "¡Oh rey del humor! Nos arrodillamos ante tu esencia risueña. Los chistes que tejemos enfrentan desafíos, y buscamos tu bendición para que la comedia florezca. Con tu benevolencia, haremos del reino un escenario lleno de risas y alegría."
+    pueblo: 3
+  - texto:  "Noble señor, con el peso de la tierra quemada, me arrodillo ante la devastación de las llamas que consumen nuestras cosechas. Imploro tu compasión para aliviar la carga de la naturaleza y hallar soluciones que rescaten a nuestro pueblo de las garras del fuego."
+    pueblo: 0
+  - texto:  "Monarca piadoso, en humildad me presento, con el corazón agitado por noticias inusuales. Un pagano asegura haber visto a la divinidad en la parte trasera de este castillo. Busco tu sabiduría para discernir y mantener la armonía entre creencias, evitando tensiones que puedan nublar la paz de este reino."
+    pueblo: 1
+  - texto:  "Majestuoso rey, la intranquilidad pesa sobre la nobleza mientras los trabajadores elevan los precios de su labor manual. Ruego por tu perspicacia para manejar esta situación, preservando la prosperidad económica y la justicia en nuestro amado reino."
+    pueblo: 2
+  - texto:  "¡Oh rey del humor! Con tristeza en nuestros corazones, observamos la creciente pérdida de bufones. Solicitamos la fundación de una academia de bufones, donde la risa y el ingenio se cultiven. Con tu benevolencia, mantendremos viva la llama de la comedia en todo el reino."
+    pueblo: 3
