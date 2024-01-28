@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 
     private System.Random random = new System.Random();
 
+    public Player PJ; 
+
     void Start()
     {
         EventManager.ActionTaken += OnActionTaken;

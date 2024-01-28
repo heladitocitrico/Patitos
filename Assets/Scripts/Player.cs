@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
+using UnityEngine.EventSystems;
 
 public enum Pueblo
 {
@@ -12,6 +13,8 @@ public enum Pueblo
 public class Player : MonoBehaviour
 {
     public Animator GameOverAnim;
+
+     public Animator PeaseantAnimator;
 
     public Image CampesinoSlider;
     public Image ClerigoSlider;
@@ -23,6 +26,9 @@ public class Player : MonoBehaviour
     public int NoblesPercent;
     public int BufonPercent;
 
+    public GameObject PJ;
+    private bool bMove=true;
+
     void Start()
     {
         SetFillAmount(Pueblo.Campesino);
@@ -32,6 +38,15 @@ public class Player : MonoBehaviour
         EventManager.ActionTaken += SetFillAmount;
     }
 
+
+    void FixedUpdate()
+    {
+        if(bMove)
+        {
+            transform.Translate(-2, 0, 0);
+        }
+         
+    }
     public void SetFillAmount(Pueblo Type, int Value = 0)
     {
         switch (Type)
@@ -58,6 +73,12 @@ public class Player : MonoBehaviour
                 break;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        bMove = false;
+    }
+
 
     void GameOver()
     {
