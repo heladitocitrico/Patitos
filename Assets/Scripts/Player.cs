@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.EventSystems;
+using System;
 
 public enum Pueblo
 {
@@ -52,7 +53,7 @@ public class Player : MonoBehaviour
         switch (Type)
         {
             case Pueblo.Campesino:
-                CampesinoPercent += Value;
+                CampesinoPercent = Math.Clamp(CampesinoPercent += Value, -10, 100);
                 CampesinoSlider.fillAmount = CampesinoPercent / 100.0f;
                 if (CampesinoPercent <= 0) GameOver();
                 break;
