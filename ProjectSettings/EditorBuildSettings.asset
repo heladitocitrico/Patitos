@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Scene.unity
     guid: 9441b51191683e34f8a0a835a43e05e5
+  - enabled: 1
+    path: Assets/Scenes/Muerte por bufon.unity
+    guid: d69d064c0e127d546ad1c084ce28a542
+  - enabled: 1
+    path: Assets/Scenes/Muerte por cleric.unity
+    guid: fa74ca7e57c369947ab54e30c03fe9cc
+  - enabled: 1
+    path: Assets/Scenes/Muerte por nobles.unity
+    guid: e6d332e7e7a42bd4c80d261c7b89db52
+  - enabled: 1
+    path: Assets/Scenes/Muerte por peasant.unity
+    guid: 8bfb05d49b95c3c4bb02b35526de30da
   m_configObjects: {}
