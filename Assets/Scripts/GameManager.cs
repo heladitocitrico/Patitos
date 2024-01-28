@@ -19,15 +19,28 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        EventManager.ActionTaken += ActionTaken;
         SelectRadomharacter();
-
         StartCoroutine(EntrarPersonaje());
+    }
+
+    void AccionTomada(int score)
+    {
+        Debug.Log("Accion tomada con puntaje: " + score);
+        StartCoroutine(SalirPersonaje());
     }
 
     IEnumerator EntrarPersonaje()
     {
         Debug.Log("Entrar personaje");
         yield return new WaitForSeconds(Random.Range(0, 0));
+        SeleccionarChisteRandom();
+    }
+
+    IEnumerator SalirPersonaje()
+    {
+        Debug.Log("Salir personaje");
+        yield return new WaitForSeconds(Random.Range(minEspera, maxEspera));
         SeleccionarChisteRandom();
     }
 
@@ -63,31 +76,24 @@ public class GameManager : MonoBehaviour
         PuebloID = (Player.Pueblo)r.Next(0, 3);
 
         DesactivateSprites();
-
         switch (PuebloID)
         {
             case Player.Pueblo.Campesino:
                 CampesinoObject.SetActive(true);
                 break;
-
             case Player.Pueblo.Clerigo:
                 CleroObject.SetActive(true);
                 break;
-
             case Player.Pueblo.Noble:
                 NobleObject.SetActive(true);
                 break;
-
             case Player.Pueblo.Bufon:
                 BufonObject.SetActive(true);
-                break;
-
-            default:
                 break;
         }
     }
 
-    void DesactivateSprites()
+    void DeactivateSprites()
     {
         CampesinoObject.SetActive(false);
         CleroObject.SetActive(false);
