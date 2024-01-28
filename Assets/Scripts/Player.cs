@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     public int NoblesPercent;
     public int BufonPercent;
 
+    public GameObject Bufon;
+
     public GameObject PJ;
     private int positionIncrement = -2;
 
@@ -45,11 +47,13 @@ public class Player : MonoBehaviour
 
     private void OnActionTaken(Pueblo pueblo, int value)
     {
+        Bufon.SetActive(true);
         SetFillAmount(pueblo, value);
         positionIncrement = 2;
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+
     }
 
     public void SetFillAmount(Pueblo pueblo, int value = 0)
@@ -77,6 +81,7 @@ public class Player : MonoBehaviour
                 if (BufonPercent <= 0) GameOver();
                 break;
         }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -85,6 +90,7 @@ public class Player : MonoBehaviour
         {
             positionIncrement = 0;
             EventManager.OnCharacterFinishedWalking();
+            Bufon.SetActive(false);
         }
         else
         {
