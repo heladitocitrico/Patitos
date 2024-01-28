@@ -5,6 +5,7 @@ using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using System;
+using UnityEngine.SceneManagement;
 
 public enum Pueblo
 {
@@ -100,4 +101,16 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Game Over");
     }   
+    void Update(){
+        if (CampesinoPercent<=0){
+            SceneManager.LoadScene("Muerte por peasant");
+        }
+        if (ClerigoPercent<=0){
+            SceneManager.LoadScene("Muerte por cleric");
+        }if (NoblesPercent<=0){
+            SceneManager.LoadScene("Muerte por nobles");
+        }if (BufonPercent<=0){
+            SceneManager.LoadScene("Muerte por bufon");
+        }
+    }
 }
