@@ -141,7 +141,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 221, y: 559}
-  - name: Mouth Rested
+  - name: Mouth Laughing
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -151,8 +151,8 @@ ScriptedImporter:
       x: 897
       y: 412
       width: 48
-      height: 11
-    spriteID: 5fced1303f164404da1c8d41c9043341
+      height: 49
+    spriteID: b8ad547562aa99e42ae961e305ae99a4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,8 +160,8 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 895, y: 411}
-    spritePosition: {x: 472, y: 558}
+    uvTransform: {x: 896, y: 410}
+    spritePosition: {x: 471, y: 520}
   - name: Eyes Neutral
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -286,7 +286,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 328, y: 1085}
+    uvTransform: {x: 327, y: 1085}
     spritePosition: {x: 501, y: 273}
   - name: Foot 1
     originalName: 
@@ -328,7 +328,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 309, y: 1119}
+    uvTransform: {x: 308, y: 1119}
     spritePosition: {x: 637, y: 16}
   characterData:
     bones: []
@@ -415,15 +415,15 @@ ScriptedImporter:
     isImported: 0
     isVisible: 0
   - name: Mouth Laughing
-    spriteName: 
+    spriteName: Mouth Laughing
     isGroup: 0
     parentIndex: 3
     spriteID: b8ad547562aa99e42ae961e305ae99a4
     layerID: 78
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 897, y: 412}
     flatten: 0
-    isImported: 0
-    isVisible: 0
+    isImported: 1
+    isVisible: 1
   - name: Mouth Rested
     spriteName: Mouth Rested
     isGroup: 0
@@ -432,8 +432,8 @@ ScriptedImporter:
     layerID: 43
     mosaicPosition: {x: 897, y: 412}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: Eyes
     spriteName: 
     isGroup: 1
