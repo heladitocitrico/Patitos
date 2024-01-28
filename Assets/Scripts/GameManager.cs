@@ -6,13 +6,11 @@ using UnityEditor.U2D.PSD;
 
 public class GameManager : MonoBehaviour
 {
-    private readonly float minEspera = 1.5f;
-    private readonly float maxEspera = 4.5f;
+    static public int JokePoints;
 
-    
     public ChistesData chistesData;
     public TextMeshProUGUI chisteText;
-    public Player.Pueblo PuebloID;
+    static public Player.Pueblo PuebloID;
 
     public GameObject CampesinoObject;
     public GameObject CleroObject;
@@ -26,44 +24,66 @@ public class GameManager : MonoBehaviour
         StartCoroutine(EntrarPersonaje());
     }
 
-    IEnumerator EntrarPersonaje() {
+    IEnumerator EntrarPersonaje()
+    {
         Debug.Log("Entrar personaje");
-        yield return new WaitForSeconds(Random.Range(minEspera, maxEspera));
+        yield return new WaitForSeconds(Random.Range(0, 0));
         SeleccionarChisteRandom();
-    } 
+    }
 
-    void SeleccionarChisteRandom() {
+    void SeleccionarChisteRandom()
+    {
         System.Random random = new System.Random();
         var chiste = chistesData.chistes[random.Next(0, chistesData.chistes.Length)];
         chisteText.text = chiste.texto;
+
+        switch (PuebloID)
+        {
+            case Player.Pueblo.Campesino:
+                JokePoints = chiste.campesinoPuntos;
+                break;
+
+            case Player.Pueblo.Clerigo:
+                JokePoints = chiste.clerigoPuntos;
+                break;
+
+            case Player.Pueblo.Noble:
+                JokePoints = chiste.reyPuntos;
+                break;
+
+            case Player.Pueblo.Bufon:
+                JokePoints = chiste.bufonPuntos;
+                break;
+        }
     }
 
     void SelectRadomharacter()
     {
-        System.Random r =  new System.Random();
+        System.Random r = new System.Random();
         PuebloID = (Player.Pueblo)r.Next(0, 3);
 
-    DesactivateSprites();
+        DesactivateSprites();
+
         switch (PuebloID)
         {
-            case Player.Pueblo.Campesino :
-            CampesinoObject.SetActive(true);
-            break;
+            case Player.Pueblo.Campesino:
+                CampesinoObject.SetActive(true);
+                break;
 
-            case Player.Pueblo.Clerigo :
-            CleroObject.SetActive(true);
-            break;
+            case Player.Pueblo.Clerigo:
+                CleroObject.SetActive(true);
+                break;
 
-            case Player.Pueblo.Noble :
-            NobleObject.SetActive(true);
-            break;
+            case Player.Pueblo.Noble:
+                NobleObject.SetActive(true);
+                break;
 
-            case Player.Pueblo.Bufon :
-            BufonObject.SetActive(true);
-            break;
+            case Player.Pueblo.Bufon:
+                BufonObject.SetActive(true);
+                break;
 
             default:
-            break;
+                break;
         }
     }
 
