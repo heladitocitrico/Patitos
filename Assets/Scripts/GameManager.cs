@@ -3,11 +3,11 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.U2D.PSD;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    private int minimumWait = 1;
-    private int maximumWait = 3;
+    public GameObject prompt;
 
     public ChistesData jokesData;
     public TextMeshProUGUI jokeText;
@@ -29,54 +29,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         EventManager.ActionTaken += OnActionTaken;
+        EventManager.CharacterFinishedWalking += SelectRandomJoke;
+        EventManager.CharacterFinishedExiting += SelectRandomCharacter;
         SelectRandomCharacter();
-        StartCoroutine(EntrarPersonaje());
-    }
-
-    void OnActionTaken(Pueblo pueblo, int score)
-    {
-        Debug.Log("Accion tomada con puntaje: " + score);
-        StartCoroutine(SalirPersonaje());
-    }
-
-    IEnumerator EntrarPersonaje()
-    {
-        Debug.Log("Entrar personaje");
-        yield return new WaitForSeconds(Random.Range(0, 0));
-        SelectRandomJoke();
-    }
-
-    IEnumerator SalirPersonaje()
-    {
-        Debug.Log("Salir personaje");
-        yield return new WaitForSeconds(Random.Range(minimumWait, maximumWait));
-        SelectRandomJoke();
-    }
-
-    void SelectRandomJoke()
-    {
-        var joke = jokesData.chistes[random.Next(0, jokesData.chistes.Length)];
-
-        jokeText.text = joke.texto;
-        laughButton.score = GetScoreForCurrentCharacter(joke);
-        killButton.score = -GetScoreForCurrentCharacter(joke);
-    }
-
-    int GetScoreForCurrentCharacter(ChistesData.ChisteItem joke)
-    {
-        switch (PuebloID)
-        {
-            case Pueblo.Campesino:
-                return joke.campesinoPuntos;
-            case Pueblo.Clerigo:
-                return joke.clerigoPuntos;
-            case Pueblo.Noble:
-                return joke.reyPuntos;
-            case Pueblo.Bufon:
-                return joke.bufonPuntos;
-            default:
-                throw new System.Exception("Pueblo no reconocido");
-        }
     }
 
     void SelectRandomCharacter()
@@ -97,6 +52,39 @@ public class GameManager : MonoBehaviour
             case Pueblo.Bufon:
                 BuffoonObject.SetActive(true);
                 break;
+        }
+    }
+
+    void OnActionTaken(Pueblo pueblo, int score)
+    {
+        prompt.SetActive(false);
+    }
+
+    void SelectRandomJoke()
+    {
+        prompt.SetActive(true);
+        var joke = jokesData.chistes[random.Next(0, jokesData.chistes.Length)];
+        jokeText.text = joke.texto;
+        laughButton.score = GetScoreForCurrentCharacter(joke);
+        killButton.score = -GetScoreForCurrentCharacter(joke);
+        laughButton.pueblo = PuebloID;
+        killButton.pueblo = PuebloID;
+    }
+
+    int GetScoreForCurrentCharacter(ChistesData.ChisteItem joke)
+    {
+        switch (PuebloID)
+        {
+            case Pueblo.Campesino:
+                return joke.campesinoPuntos;
+            case Pueblo.Clerigo:
+                return joke.clerigoPuntos;
+            case Pueblo.Noble:
+                return joke.reyPuntos;
+            case Pueblo.Bufon:
+                return joke.bufonPuntos;
+            default:
+                throw new System.Exception("Pueblo no reconocido");
         }
     }
 

@@ -13,10 +13,6 @@ public enum Pueblo
 
 public class Player : MonoBehaviour
 {
-    public Animator GameOverAnim;
-
-     public Animator PeaseantAnimator;
-
     public Image CampesinoSlider;
     public Image ClerigoSlider;
     public Image NoblesSlider;
@@ -28,7 +24,7 @@ public class Player : MonoBehaviour
     public int BufonPercent;
 
     public GameObject PJ;
-    private bool bMove=true;
+    private int positionIncrement = -2;
 
     void Start()
     {
@@ -36,39 +32,47 @@ public class Player : MonoBehaviour
         SetFillAmount(Pueblo.Clerigo);
         SetFillAmount(Pueblo.Noble);
         SetFillAmount(Pueblo.Bufon);
-        EventManager.ActionTaken += SetFillAmount;
+        EventManager.ActionTaken += OnActionTaken;
     }
-
 
     void FixedUpdate()
     {
-        if(bMove)
+        if (positionIncrement != 0)
         {
-            transform.Translate(-2, 0, 0);
+            transform.Translate(positionIncrement, 0, 0);
         }
-         
     }
-    public void SetFillAmount(Pueblo Type, int Value = 0)
+
+    private void OnActionTaken(Pueblo pueblo, int value)
     {
-        switch (Type)
+        SetFillAmount(pueblo, value);
+        positionIncrement = 2;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
+    public void SetFillAmount(Pueblo pueblo, int value = 0)
+    {
+        switch (pueblo)
         {
             case Pueblo.Campesino:
-                CampesinoPercent = Math.Clamp(CampesinoPercent += Value, -10, 100);
+                CampesinoPercent = Math.Clamp(CampesinoPercent + value, -10, 100);
                 CampesinoSlider.fillAmount = CampesinoPercent / 100.0f;
                 if (CampesinoPercent <= 0) GameOver();
                 break;
             case Pueblo.Clerigo:
-                ClerigoPercent += Value;
+                ClerigoPercent = Math.Clamp(ClerigoPercent + value, -10, 100);
                 ClerigoSlider.fillAmount = ClerigoPercent / 100.0f;
                 if (ClerigoPercent <= 0) GameOver();
                 break;
             case Pueblo.Noble:
-                NoblesPercent += Value;
+                NoblesPercent = Math.Clamp(NoblesPercent + value, -10, 100);
                 NoblesSlider.fillAmount = NoblesPercent / 100.0f;
                 if (NoblesPercent <= 0) GameOver();
                 break;
             case Pueblo.Bufon:
-                BufonPercent += Value;
+                BufonPercent = Math.Clamp(BufonPercent + value, -10, 100);
                 BufonesSlider.fillAmount = BufonPercent / 100.0f;
                 if (BufonPercent <= 0) GameOver();
                 break;
@@ -77,12 +81,23 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        bMove = false;
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            positionIncrement = 0;
+            EventManager.OnCharacterFinishedWalking();
+        }
+        else
+        {
+            EventManager.OnCharacterFinishedExiting();
+            positionIncrement = -2;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
     }
 
-
-    void GameOver()
+    private void GameOver()
     {
-        GameOverAnim.SetTrigger("GameOver");
-    }
+        Debug.Log("Game Over");
+    }   
 }

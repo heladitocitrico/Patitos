@@ -14,132 +14,132 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chistes:
   - texto: ¿Cómo sabes que a un clérigo no le gusta que roben en su iglesia? Porque siempre reza para que los ladrones se arrepientan... ¡antes de llamar a la guardia!
-    campesinoPuntos: 0
+    campesinoPuntos: -10
     clerigoPuntos: -20
     reyPuntos: 10
-    bufonPuntos: 0
+    bufonPuntos: -10
   - texto: ¿Cuál es el animal favorito de un clérigo? El cordero, porque siempre está dispuesto a perdonar y no pelea.
     campesinoPuntos: -20
     clerigoPuntos: 20
-    reyPuntos: 0
-    bufonPuntos: 0
+    reyPuntos: -10
+    bufonPuntos: -10
   - texto: Un clérigo, un paladín y un ladrón llegan a un bar. El clérigo pide agua bendita, el paladín pide leche y el ladrón... bueno, ya se llevó la billetera del mesero.
     campesinoPuntos: 10
-    clerigoPuntos: -35
-    reyPuntos: 0
-    bufonPuntos: 0
+    clerigoPuntos: -30
+    reyPuntos: -10
+    bufonPuntos: -10
   - texto: ¿Por qué los clérigos no son buenos para jugar al escondite? Porque siempre los encuentras rezando en la capilla.
     campesinoPuntos: -20
-    clerigoPuntos: 35
-    reyPuntos: 0
-    bufonPuntos: 0
+    clerigoPuntos: 30
+    reyPuntos: -10
+    bufonPuntos: -10
   - texto: Un clérigo, un bárbaro y un mago encuentran una fuente mágica. El bárbaro desea fuerza, el mago sabiduría, y el clérigo... simplemente pide que todos se comporten y dejen de hacer deseos egoístas.
-    campesinoPuntos: 15
-    clerigoPuntos: -5
+    campesinoPuntos: 20
+    clerigoPuntos: -10
     reyPuntos: 10
-    bufonPuntos: 25
+    bufonPuntos: 20
   - texto: ¿Cuál es la bebida favorita de un clérigo? ¡Agua milagrosa! ¡Lo único que multiplica más rápido que los panes y los peces!
-    campesinoPuntos: -35
+    campesinoPuntos: -30
     clerigoPuntos: 20
     reyPuntos: -10
-    bufonPuntos: -25
+    bufonPuntos: -30
   - texto: "¿Cómo se enfada un clérigo con un ladrón? Le pregunta: ¿No has aprendido nada de 'No robarás'?"
     campesinoPuntos: 10
     clerigoPuntos: -10
-    reyPuntos: 0
-    bufonPuntos: 25
+    reyPuntos: -10
+    bufonPuntos: 20
   - texto: "Un bardo, un clérigo y un guerrero caminan hacia una aldea. El bardo canta, el guerrero entrena, y el clérigo... simplemente dice: ¡Dejen de comportarse como paganos!"
     campesinoPuntos: -10
-    clerigoPuntos: -25
+    clerigoPuntos: -30
     reyPuntos: 10
-    bufonPuntos: 15
+    bufonPuntos: 20
   - texto: ¿Cómo hace un clérigo para cambiar una bombilla? Solo tiene que orar para que la luz divina ilumine la habitación.
-    campesinoPuntos: -35
+    campesinoPuntos: -30
     clerigoPuntos: -20
     reyPuntos: 30
-    bufonPuntos: 5
+    bufonPuntos: 10
   - texto: ¿Qué hace un clérigo cuando pierde su martillo sagrado? Reza para que algún día regrese... ¡y comienza a usar un destornillador bendito en su lugar!
-    campesinoPuntos: 0
+    campesinoPuntos: -10
     clerigoPuntos: 10
-    reyPuntos: 0
+    reyPuntos: -10
     bufonPuntos: -30
   - texto: ¿Cuál es el deporte favorito de los campesinos? ¡La cosecha de medallas!
     campesinoPuntos: 10
     clerigoPuntos: 20
     reyPuntos: 30
-    bufonPuntos: 25
+    bufonPuntos: 20
   - texto: ¿Por qué el campesino lleva una oveja al cine? ¡Porque quiere ver una película de baa-rbaros!
-    campesinoPuntos: -25
-    clerigoPuntos: 0
+    campesinoPuntos: -30
+    clerigoPuntos: -10
     reyPuntos: 30
     bufonPuntos: -20
   - texto: Un campesino va al médico con una mazorca de maíz en la oreja...
-    campesinoPuntos: 25
-    clerigoPuntos: -15
+    campesinoPuntos: 20
+    clerigoPuntos: -10
     reyPuntos: 20
     bufonPuntos: 30
   - texto: ¿Cuál es la comida favorita de los campesinos en la luna de miel? ¡El maíz-pañero!
-    campesinoPuntos: 5
+    campesinoPuntos: 10
     clerigoPuntos: -30
     reyPuntos: -30
     bufonPuntos: 10
   - texto: Un campesino y un jardinero discuten sobre quién tiene el trabajo más difícil...
     campesinoPuntos: -20
     clerigoPuntos: -30
-    reyPuntos: 15
+    reyPuntos: 20
     bufonPuntos: 30
   - texto: ¿Cómo hace un campesino para contar ovejas antes de dormir?...
-    campesinoPuntos: 35
-    clerigoPuntos: -25
-    reyPuntos: -35
+    campesinoPuntos: 30
+    clerigoPuntos: -30
+    reyPuntos: -30
     bufonPuntos: -40
   - texto: "Un campesino le pregunta a su amigo: ¿Cuál es tu súper poder?..."
     campesinoPuntos: -40
-    clerigoPuntos: 0
+    clerigoPuntos: -10
     reyPuntos: 20
-    bufonPuntos: 15
+    bufonPuntos: 20
   - texto: ¿Por qué el campesino lleva un reloj en el campo? ¡Para cultivar tiempo!
-    campesinoPuntos: -25
-    clerigoPuntos: 0
+    campesinoPuntos: -30
+    clerigoPuntos: -10
     reyPuntos: 10
     bufonPuntos: -20
   - texto: Un campesino compra un tractor nuevo y lo llama Amor Verdadero...
     campesinoPuntos: -50
-    clerigoPuntos: 35
-    reyPuntos: 15
-    bufonPuntos: 0
+    clerigoPuntos: 30
+    reyPuntos: 20
+    bufonPuntos: -10
   - texto: ¿Cuál es el refrán favorito del campesino? Más vale pájaro en mano que pollo en vecino...
-    campesinoPuntos: -35
+    campesinoPuntos: -30
     clerigoPuntos: 10
-    reyPuntos: 0
+    reyPuntos: -10
     bufonPuntos: -60
   - texto: "Un campesino lleva un lápiz al campo. Pregunta: ¿Por qué?..."
-    campesinoPuntos: 15
-    clerigoPuntos: 0
+    campesinoPuntos: 20
+    clerigoPuntos: -10
     reyPuntos: -30
     bufonPuntos: -60
   - texto: Un campesino inventa una máquina del tiempo con tractores...
-    campesinoPuntos: 25
+    campesinoPuntos: 20
     clerigoPuntos: 10
-    reyPuntos: 25
-    bufonPuntos: -25
+    reyPuntos: 20
+    bufonPuntos: -30
   - texto: ¿Qué hace un campesino cuando gana la lotería?...
-    campesinoPuntos: 15
-    clerigoPuntos: 5
+    campesinoPuntos: 20
+    clerigoPuntos: 10
     reyPuntos: 10
     bufonPuntos: 20
   - texto: Un campesino y un astronauta conversan...
     campesinoPuntos: -20
     clerigoPuntos: 10
-    reyPuntos: 5
-    bufonPuntos: -15
+    reyPuntos: 10
+    bufonPuntos: -10
   - texto: ¿Cuál es la película favorita de los campesinos? ¡Campo de sueños!
-    campesinoPuntos: -15
+    campesinoPuntos: -10
     clerigoPuntos: -10
-    reyPuntos: -25
+    reyPuntos: -30
     bufonPuntos: -10
   - texto: "Un campesino va a la tienda y pregunta: ¿Tienen algo para alejar a los cuervos de mi campo?..."
-    campesinoPuntos: -15
+    campesinoPuntos: -10
     clerigoPuntos: -20
     reyPuntos: -40
     bufonPuntos: -40
@@ -152,76 +152,76 @@ MonoBehaviour:
     campesinoPuntos: -30
     clerigoPuntos: -10
     reyPuntos: -30
-    bufonPuntos: -25
+    bufonPuntos: -30
   - texto: ¿Cuál es el juego favorito de la nobleza? La monarquía-opoly, donde siempre ganan.
-    campesinoPuntos: -25
-    clerigoPuntos: 15
-    reyPuntos: 35
-    bufonPuntos: -25
+    campesinoPuntos: -30
+    clerigoPuntos: 20
+    reyPuntos: 30
+    bufonPuntos: -30
   - texto: "Un rey pregunta a su consejero: ¿Cómo deberíamos llamar a nuestro nuevo castillo? El consejero responde: Quizás 'Deuda Infinita'."
     campesinoPuntos: -10
-    clerigoPuntos: -15
-    reyPuntos: -25
-    bufonPuntos: -35
+    clerigoPuntos: -10
+    reyPuntos: -30
+    bufonPuntos: -30
   - texto: ¿Cuál es la bebida favorita de la realeza? ¡Agua mineral con gas de la fuente real!
-    campesinoPuntos: -15
-    clerigoPuntos: -5
-    reyPuntos: 15
-    bufonPuntos: 25
+    campesinoPuntos: -10
+    clerigoPuntos: -10
+    reyPuntos: 20
+    bufonPuntos: 20
   - texto: "Un noble y un campesino coinciden en un bar. El noble pide vino caro, y el campesino agua. El noble pregunta: ¿No bebes vino? El campesino responde: No, solo bebo lo que puedo pagar."
-    campesinoPuntos: 25
-    clerigoPuntos: -5
-    reyPuntos: -35
-    bufonPuntos: -15
+    campesinoPuntos: 20
+    clerigoPuntos: -10
+    reyPuntos: -30
+    bufonPuntos: -10
   - texto: ¿Por qué la reina siempre lleva una corona? ¡Porque si se quita la corona, se revela que no es más que una dama común con demasiada joyería!
     campesinoPuntos: -20
-    clerigoPuntos: 0
+    clerigoPuntos: -10
     reyPuntos: 40
-    bufonPuntos: 0
+    bufonPuntos: -10
   - texto: "Un noble le dice a otro: Mi fortuna es tan grande que hasta mis impuestos tienen sus propios impuestos."
-    campesinoPuntos: 25
-    clerigoPuntos: 0
+    campesinoPuntos: 20
+    clerigoPuntos: -10
     reyPuntos: -10
-    bufonPuntos: -35
+    bufonPuntos: -30
   - texto: ¿Cuál es el perfume favorito de la nobleza? Eau de Aristocracia.
-    campesinoPuntos: 0
-    clerigoPuntos: 0
+    campesinoPuntos: -10
+    clerigoPuntos: -10
     reyPuntos: -20
     bufonPuntos: -10
   - texto: "Un príncipe y una princesa van de compras. La princesa compra un espejo mágico que siempre le dice que es la más hermosa. El príncipe murmura: Debería haber comprado uno que diga la verdad."
     campesinoPuntos: -20
     clerigoPuntos: -10
-    reyPuntos: -35
-    bufonPuntos: -25
+    reyPuntos: -30
+    bufonPuntos: -30
   - texto: ¿Cómo organiza la nobleza una fiesta sorpresa? ¡Contratan a un bufón para decirle a la persona que está siendo sorprendida!
-    campesinoPuntos: 0
-    clerigoPuntos: 0
-    reyPuntos: 0
-    bufonPuntos: 0
+    campesinoPuntos: -10
+    clerigoPuntos: -10
+    reyPuntos: -10
+    bufonPuntos: -10
   - texto: "Un rey decide hacer ejercicio y le pregunta a su sirviente: ¿Cuántas flexiones debo hacer? El sirviente responde: ¡Su Majestad, una para levantarse del trono y otra para sentarse de nuevo!"
-    campesinoPuntos: 15
-    clerigoPuntos: 0
+    campesinoPuntos: 20
+    clerigoPuntos: -10
     reyPuntos: -30
     bufonPuntos: -10
   - texto: ¿Cómo hace un bufón para hacer reír a un clérigo? Le cuenta un chiste sobre un santo que se perdió en el cielo porque usó GPS celestial.
     campesinoPuntos: -10
     clerigoPuntos: -20
     reyPuntos: -20
-    bufonPuntos: -15
+    bufonPuntos: -10
   - texto: "Un bufón le pregunta al campesino: ¿Cuál es tu arma secreta para lidiar con las malas cosechas? El campesino responde: Mis suegros, ¡siempre arruinan todo!"
-    campesinoPuntos: -35
-    clerigoPuntos: -15
+    campesinoPuntos: -30
+    clerigoPuntos: -10
     reyPuntos: -20
     bufonPuntos: -30
   - texto: "Un bufón se presenta ante el rey y dice: Su Majestad, he oído que tienes una fortuna tan grande que hasta tus deudas tienen su propio séquito. ¿Es eso verdad?"
     campesinoPuntos: -20
     clerigoPuntos: -10
     reyPuntos: -30
-    bufonPuntos: -15
+    bufonPuntos: -10
   - texto: ¿Cómo hace un bufón para divertir a la realeza? Organiza un torneo de justas con caballos de juguete y almohadas en lugar de lanzas.
-    campesinoPuntos: -25
-    clerigoPuntos: -5
-    reyPuntos: -15
+    campesinoPuntos: -30
+    clerigoPuntos: -10
+    reyPuntos: -10
     bufonPuntos: -10
   - texto: "Un bufón le pregunta al clérigo: ¿Cuál es tu oración favorita? El clérigo responde: La que hago cuando veo el menú de impuestos."
     campesinoPuntos: -30
@@ -230,76 +230,76 @@ MonoBehaviour:
     bufonPuntos: -30
   - texto: ¿Por qué el bufón siempre lleva un libro de chistes al campo? Para cosechar risas, ¡es el mejor cultivo!
     campesinoPuntos: -20
-    clerigoPuntos: -5
+    clerigoPuntos: -10
     reyPuntos: -10
-    bufonPuntos: -25
+    bufonPuntos: -30
   - texto: "Un bufón se presenta ante la realeza y dice: ¿Sabían que los dragones también pagan impuestos? Solo que lo hacen con oro fundido."
     campesinoPuntos: -10
-    clerigoPuntos: -15
-    reyPuntos: -15
+    clerigoPuntos: -10
+    reyPuntos: -10
     bufonPuntos: -10
   - texto: ¿Cómo hace un bufón para hacer reír a un campesino? Le cuenta un chiste sobre un espantapájaros que renunció porque todos los pájaros se reían de él.
-    campesinoPuntos: -15
-    clerigoPuntos: 5
-    reyPuntos: 15
-    bufonPuntos: 15
+    campesinoPuntos: -10
+    clerigoPuntos: 10
+    reyPuntos: 20
+    bufonPuntos: 20
   - texto: "Un bufón le dice al clérigo: Tienes tanta paciencia que podrías darle clases a las ovejas sobre cómo contar hasta cien antes de saltar la valla."
     campesinoPuntos: -20
-    clerigoPuntos: -25
+    clerigoPuntos: -30
     reyPuntos: -20
-    bufonPuntos: -25
+    bufonPuntos: -30
   - texto: ¿Cuál es el chiste favorito del sindicato de bufones? ¿Por qué los elfos no juegan al póker? ¡Porque ya tienen un as en la manga!
     campesinoPuntos: -20
     clerigoPuntos: -20
     reyPuntos: -20
-    bufonPuntos: -35
+    bufonPuntos: -30
   - texto: "Un bufón le pregunta al campesino: ¿Cuál es tu herramienta más útil en la granja? El campesino responde: ¡Mi habilidad para hablar con las plantas! Les digo: ¡Crecer o serán ensalada!"
-    campesinoPuntos: -25
+    campesinoPuntos: -30
     clerigoPuntos: -10
-    reyPuntos: -15
+    reyPuntos: -10
     bufonPuntos: -10
   - texto: ¿Cómo hace un bufón para hacer reír a la realeza? Le cuenta un chiste sobre cómo el trono real también tiene su propio asiento cómico.
-    campesinoPuntos: 5
-    clerigoPuntos: 5
-    reyPuntos: 15
+    campesinoPuntos: 10
+    clerigoPuntos: 10
+    reyPuntos: 20
     bufonPuntos: 10
   - texto: "Un bufón se presenta ante el clérigo y le pregunta: ¿Cuál es la diferencia entre un sermón aburrido y una siesta celestial?."
-    campesinoPuntos: -35
+    campesinoPuntos: -30
     clerigoPuntos: -10
-    reyPuntos: -25
-    bufonPuntos: -45
+    reyPuntos: -30
+    bufonPuntos: -50
   - texto: ¿Por qué el bufón siempre lleva una regla al campo? Para medir el nivel de diversión, ¡porque cada broma cuenta!
-    campesinoPuntos: -15
-    clerigoPuntos: -15
+    campesinoPuntos: -10
+    clerigoPuntos: -10
     reyPuntos: -10
     bufonPuntos: -40
   - texto: "Un bufón le dice al campesino: Escuché que en tu granja cultivas chistes. ¿Cómo los cosechas?. El campesino responde: Con un tractor de risas y un rastrillo de carcajadas."
-    campesinoPuntos: -35
-    clerigoPuntos: -15
+    campesinoPuntos: -30
+    clerigoPuntos: -10
     reyPuntos: -20
     bufonPuntos: -30
   - texto: ¿Cuál es el chiste favorito del sindicato de bufones sobre la realeza? ¿Por qué el rey siempre lleva corona? ¡Porque es la única forma de mantener su cabeza sobre los impuestos!
-    campesinoPuntos: -25
+    campesinoPuntos: -30
     clerigoPuntos: -10
-    reyPuntos: -15
+    reyPuntos: -10
     bufonPuntos: -20
   - texto: "Un bufón le pregunta al clérigo: ¿Cuántos clérigos se necesitan para cambiar una bombilla en una iglesia?. El clérigo responde: Solo uno, pero tendrás que esperar a que el sol se alinee con la liturgia."
     campesinoPuntos: -10
-    clerigoPuntos: -45
-    reyPuntos: -15
+    clerigoPuntos: -50
+    reyPuntos: -10
     bufonPuntos: 10
   - texto: ¿Cómo hace un bufón para hacer reír a un campesino? Le cuenta un chiste sobre una vaca que se convirtió en actriz porque siempre estaba en el centro del escenario.
-    campesinoPuntos: -5
-    clerigoPuntos: -5
+    campesinoPuntos: -10
+    clerigoPuntos: -10
     reyPuntos: 20
     bufonPuntos: 10
   - texto: "Un bufón se presenta ante la realeza y pregunta: ¿Cuál es el perfume favorito de la reina? ¡Poder floral!"
-    campesinoPuntos: -5
-    clerigoPuntos: -5
-    reyPuntos: -20
-    bufonPuntos: -5
-  - texto: ¿Por qué el bufón nunca pide un aumento? Porque sabe que en el mundo del humor, ¡es mejor reírse de los billetes pequeños!
-    campesinoPuntos: -15
+    campesinoPuntos: -10
     clerigoPuntos: -10
     reyPuntos: -20
-    bufonPuntos: -25
+    bufonPuntos: -10
+  - texto: ¿Por qué el bufón nunca pide un aumento? Porque sabe que en el mundo del humor, ¡es mejor reírse de los billetes pequeños!
+    campesinoPuntos: -10
+    clerigoPuntos: -10
+    reyPuntos: -20
+    bufonPuntos: -30
