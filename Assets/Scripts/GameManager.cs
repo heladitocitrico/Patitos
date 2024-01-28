@@ -6,25 +6,32 @@ using UnityEditor.U2D.PSD;
 
 public class GameManager : MonoBehaviour
 {
-    static public int JokePoints;
+    private int minimumWait = 1;
+    private int maximumWait = 3;
 
-    public ChistesData chistesData;
-    public TextMeshProUGUI chisteText;
-    static public Player.Pueblo PuebloID;
+    public ChistesData jokesData;
+    public TextMeshProUGUI jokeText;
+    public static Pueblo PuebloID;
 
-    public GameObject CampesinoObject;
-    public GameObject CleroObject;
+    public GameObject PeasantObject;
+    public GameObject ClergyObject;
     public GameObject NobleObject;
-    public GameObject BufonObject;
+    public GameObject BuffoonObject;
+
+    public ActionButton laughButton;
+    public ActionButton neutralButton;
+    public ActionButton killButton;
+
+    private System.Random random = new System.Random();
 
     void Start()
     {
-        EventManager.ActionTaken += ActionTaken;
-        SelectRadomharacter();
+        EventManager.ActionTaken += OnActionTaken;
+        SelectRandomCharacter();
         StartCoroutine(EntrarPersonaje());
     }
 
-    void AccionTomada(int score)
+    void OnActionTaken(Pueblo pueblo, int score)
     {
         Debug.Log("Accion tomada con puntaje: " + score);
         StartCoroutine(SalirPersonaje());
@@ -34,70 +41,68 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Entrar personaje");
         yield return new WaitForSeconds(Random.Range(0, 0));
-        SeleccionarChisteRandom();
+        SelectRandomJoke();
     }
 
     IEnumerator SalirPersonaje()
     {
         Debug.Log("Salir personaje");
-        yield return new WaitForSeconds(Random.Range(minEspera, maxEspera));
-        SeleccionarChisteRandom();
+        yield return new WaitForSeconds(Random.Range(minimumWait, maximumWait));
+        SelectRandomJoke();
     }
 
-    void SeleccionarChisteRandom()
+    void SelectRandomJoke()
     {
-        System.Random random = new System.Random();
-        var chiste = chistesData.chistes[random.Next(0, chistesData.chistes.Length)];
-        chisteText.text = chiste.texto;
+        var joke = jokesData.chistes[random.Next(0, jokesData.chistes.Length)];
 
+        jokeText.text = joke.texto;
+        laughButton.score = GetScoreForCurrentCharacter(joke);
+        killButton.score = -GetScoreForCurrentCharacter(joke);
+    }
+
+    int GetScoreForCurrentCharacter(ChistesData.ChisteItem joke)
+    {
         switch (PuebloID)
         {
-            case Player.Pueblo.Campesino:
-                JokePoints = chiste.campesinoPuntos;
-                break;
-
-            case Player.Pueblo.Clerigo:
-                JokePoints = chiste.clerigoPuntos;
-                break;
-
-            case Player.Pueblo.Noble:
-                JokePoints = chiste.reyPuntos;
-                break;
-
-            case Player.Pueblo.Bufon:
-                JokePoints = chiste.bufonPuntos;
-                break;
+            case Pueblo.Campesino:
+                return joke.campesinoPuntos;
+            case Pueblo.Clerigo:
+                return joke.clerigoPuntos;
+            case Pueblo.Noble:
+                return joke.reyPuntos;
+            case Pueblo.Bufon:
+                return joke.bufonPuntos;
+            default:
+                throw new System.Exception("Pueblo no reconocido");
         }
     }
 
-    void SelectRadomharacter()
+    void SelectRandomCharacter()
     {
-        System.Random r = new System.Random();
-        PuebloID = (Player.Pueblo)r.Next(0, 3);
-
-        DesactivateSprites();
+        PuebloID = (Pueblo)random.Next(0, 3);
+        DeactivateSprites();
         switch (PuebloID)
         {
-            case Player.Pueblo.Campesino:
-                CampesinoObject.SetActive(true);
+            case Pueblo.Campesino:
+                PeasantObject.SetActive(true);
                 break;
-            case Player.Pueblo.Clerigo:
-                CleroObject.SetActive(true);
+            case Pueblo.Clerigo:
+                ClergyObject.SetActive(true);
                 break;
-            case Player.Pueblo.Noble:
+            case Pueblo.Noble:
                 NobleObject.SetActive(true);
                 break;
-            case Player.Pueblo.Bufon:
-                BufonObject.SetActive(true);
+            case Pueblo.Bufon:
+                BuffoonObject.SetActive(true);
                 break;
         }
     }
 
     void DeactivateSprites()
     {
-        CampesinoObject.SetActive(false);
-        CleroObject.SetActive(false);
+        PeasantObject.SetActive(false);
+        ClergyObject.SetActive(false);
         NobleObject.SetActive(false);
-        BufonObject.SetActive(false);
+        BuffoonObject.SetActive(false);
     }
 }

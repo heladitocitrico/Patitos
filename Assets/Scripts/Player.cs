@@ -4,13 +4,13 @@ using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
 
+public enum Pueblo
+{
+    Campesino, Clerigo, Noble, Bufon
+}
+
 public class Player : MonoBehaviour
 {
-    public enum Pueblo
-    {
-        Campesino, Clerigo, Noble, Bufon
-    }
-
     public Animator GameOverAnim;
 
     public Image CampesinoSlider;
@@ -29,6 +29,7 @@ public class Player : MonoBehaviour
         SetFillAmount(Pueblo.Clerigo);
         SetFillAmount(Pueblo.Noble);
         SetFillAmount(Pueblo.Bufon);
+        EventManager.ActionTaken += SetFillAmount;
     }
 
     public void SetFillAmount(Pueblo Type, int Value = 0)
@@ -54,9 +55,6 @@ public class Player : MonoBehaviour
                 BufonPercent += Value;
                 BufonesSlider.fillAmount = BufonPercent / 100.0f;
                 if (BufonPercent <= 0) GameOver();
-                break;
-            default:
-                Debug.Log("Type undifinded");
                 break;
         }
     }
